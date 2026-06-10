@@ -2,13 +2,7 @@
 #ifndef AIR_QUALITY_MODEL_H
 #define AIR_QUALITY_MODEL_H
 
-/* Call this function from your loop():
-   int modeEnc = (mode == "CLASS") ? 0 : (mode == "AMPHI") ? 1 : 2;
-   float heatIndex = temp * (1.0f + 0.01f * hum);
-   float gasRatio  = (float)mq2 / (mq135 + 1.0f);
-   String label = predictAirQuality(modeEnc, temp, hum, mq2, mq135,
-                                    heatIndex, gasRatio);
-*/
+
 
 inline String predictAirQuality(
     int   mode_enc,
